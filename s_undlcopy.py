@@ -57,7 +57,7 @@ def scrap():
 				v="" #limpia las variables repetidas
 				#print(c.upper())
 			else:
-				v=v+s+","
+				v=v+s+"," #se agrga comas a la concatenacion de cada materia
 				#print(v)
 				cars[c]=v
 
