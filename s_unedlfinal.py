@@ -9,7 +9,7 @@ def scrap():
 	page =  0  #contador de paginas.
 	pags=[1,2,3,4,5,6,7,8,9,10,11,15,16,30,34,35,36,39,40] #numero de paginas que voy a scrapyar ID's
 	#X=len(pags) #largo del numero de paginas
-	while(page < 1):
+	while(page < 3):
 		markup= requests.get(f'https://www.unedl.edu.mx/carreras/carreras.php?univ=unedl&idCarrera={pags[page]}').text
 		#hacer un parseo
 		soup=BeautifulSoup(markup,'html.parser') # lo convierta a html. TODO EXTRACTO DE LA PAGINA
