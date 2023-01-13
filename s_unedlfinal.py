@@ -49,7 +49,7 @@ def scrap():
 									smt.append(i)
 		#print(smt) #IMprime todo el semestre
 		#print(lics)
-		cars["semestre"]=lics
+		cars["semestre"]=lics #agregamos cabeceras en el excel.
 		v="" #mi variable string
 		for s in smt:
 			if "semestre" in s:
