@@ -67,7 +67,7 @@ def scrap():
 		page+=1
 
 		try:
-			with open(f'{lic}.csv','w') as f:
+			with open(f'{lic}.csv','w').strip() as f:
 				writer=csv.writer(f)
 				#lectura de un diccionario para agregarlo al csv
 				for k,v in cars.items():
